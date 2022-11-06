@@ -21,7 +21,9 @@ cardNumberInput.addEventListener("input", () => {
     cardNumberArray.push(parseInt(cardNumberInput.value));
     displayCardNumber.textContent = format(cardNumberArray);
     cardNumberInput.value == "" ? (displayCardNumber.textContent = "#### #### #### ####") : false;
-    displayCardNumber.textContent == "#### #### #### ####" ? displayCardNumber.classList.add("responsiveCardNumber") : false;
+    displayCardNumber.textContent == "#### #### #### ####"
+        ? displayCardNumber.classList.add("responsiveCardNumber")
+        : false;
 });
 cardHolderInput.addEventListener("input", () => {
     displayCardHolder.textContent = cardHolderInput.value;
